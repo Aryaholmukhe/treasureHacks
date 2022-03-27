@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Member</title>
+</head>
+
+<body style="background-color: #FEFAE0">
+    <div class="text-center" style="background-color: #D4A373; color: #FEFAE0">
+        <h1><%=personInfo.name%></h1>
+    </div>
+    <h1 class="">Name : <%=personInfo.name%>
+    </h1>
+    <h1>Age : <%=personInfo.age%>
+    </h1>
+    <h1>Phone Number: <%=personInfo.phone%>
+    </h1>
+    <h1>Role : <%=personInfo.role%>
+    </h1>
+    <div>
+        <h1>Progress</h1>
+        <%  foundProg.forEach(function(prog){ %>
+            <p>prog</p>
+            <% }) %>
+                <form action="/<%= personInfo.id %>" method="post">
+                    <input type="text" name="excercise" placeholder="New improvement" autocomplete="off"/>
+                    <button type="submit" value="<%=personInfo.id>">Add</button>
+                </form>
+    </div>
+</body>
+
+</html>

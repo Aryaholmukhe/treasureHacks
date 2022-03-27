@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" type=="text/css">
+    <script src="https://kit.fontawesome.com/b648f1d9fc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Home</title>
+
+</head>
+
+<body style="background-color: #FEFAE0">
+
+  <div class="text-center pt-3 pb-3" style="font-family: 'Permanent Marker', cursive; background-color: #D4A373; color: #FEFAE0">
+    <h1>TRACKERU</h1>
+
+  </div>
+
+    <h1 class="ml-2">Hello, <%=person%></h1>
+<% if(person == "Coach"){ %>
+  <!-- announcements -->
+  <form action="/announcements" method="post">
+    <label>Message: </label>
+      <input name="message" type="text">
+      <button type="submit">Send</button>
+    </form>
+    
+    
+  </form>
+<% } else{ %>
+<!-- <h1>YOU HAVE A NOTIFICATION FORM YOU COACH</h1> -->
+<% }%>
+
+    <%allMembers.forEach(function(member){ %>
+        <form action="/delete" method="post">
+            <div class="item">
+              <div class="pl-4 pr-4 pt-4 pb-4" style="background-color: #E9EDC9; margin: 0px 20px">
+                <p>Name: <%=member.name%></p>
+                <p>Role: <%=member.role%></p>
+                <input type="checkbox" name="checkbox" value="<%=member._id%>"  onChange="this.form.submit()">
+                <label for="checkbox">Remove</label>
+                <a href="<%=member._id%>">View Pro</a>
+              </div>
+              
+              
+              
+            </div>
+            <input type="hidden" name="listName" value=""></input>
+          </form>
+        <%}) %>
+
+            <form class="" action="/" method="post">
+                <input type="text" name="newPlayer" placeholder="New Member" autocomplete="off">
+                <input type="text" name="newRole" placeholder="Role" autocomplete="off">
+                <input type="text" name="age" placeholder="Age" autocomplete="off">
+                <input type="text" name="phoneNumber" placeholder="Phone Number" autocomplete="off">
+                <button type="submit" name="list" >+</button>
+            </form>
+
+</p>
+
+</body>
+</html>

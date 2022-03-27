@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COACH SIGN UP</title>
+</head>
+<body>
+    <div>
+        <h1>SIGN UP</h1>
+    </div>
+
+    <h1>ROLE: COACH</h1>
+
+    <form>
+        <label for="team-name">Team Name: </label>
+        <input type="text" name="team-name">
+
+        <label for="sport-type">Type of Sport: </label>
+        <input type="text" name="sport-type">
+    </form>
+
+    <div>
+        <div>
+            <h2>Members:</h2>
+            <ul id="members-list">
+
+            </ul>
+            <button onclick="addMember()" class="add"></button>
+        </div>
+        <div>
+            <h2>Monitoring Factors:</h2>
+            <ul id="parameters-list">
+
+            </ul>
+            <form>
+                <label fr>Add Member: </label>
+                <input >
+            </form>
+            <button onclick="addParam()" class="add"></button>
+        </div>
+    </div>
+
+    <div>
+        <button>SUBMIT</button>
+    </div>
+
+    <script src="./coach.js"></script>
+</html>

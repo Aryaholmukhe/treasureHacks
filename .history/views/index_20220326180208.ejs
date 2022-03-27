@@ -1,0 +1,163 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/main.css">
+    <title>Home</title>
+
+</head>
+
+<body>
+    <button id="btn-login" onclick="login()">LOG IN</button>
+    <button id="btn-logout" onclick="logout()">LOG OUT</button>
+
+    <h1>Hello, <%=person%></h1>
+<% if(person == "Coach"){ %>
+  <!-- announcements -->
+  <form action="/announcements" method="post">
+    <label>Message: </label>
+    <input name="message" type="text">
+    
+  </form>
+<% } else{ %>
+<!-- <h1>YOU HAVE A NOTIFICATION FORM YOU COACH</h1> -->
+<% }%>
+
+    <%allMembers.forEach(function(member){ %>
+        <form action="/delete" method="post">
+            <div class="item">
+              <input type="checkbox" name="checkbox" value="<%=member._id%>"  onChange="this.form.submit()">
+              <p><%=member.name%></p>
+              <p><%=member.role%></p>
+            </div>
+            <input type="hidden" name="listName" value=""></input>
+          </form>
+        <%}) %>
+
+            <form class="" action="/" method="post">
+                <input type="text" name="newPlayer" placeholder="New Member" autocomplete="off">
+                <input type="text" name="newRole" placeholder="Role" autocomplete="off">
+                <button type="submit" name="list" >+</button>
+            </form>
+
+</p>
+    </header>
+        <div class="container">
+		<p id="page1"><title>The Dirty Cheetahs</title>
+        	<div class="coach">
+         		<h3>Gertrude Bison</h3>
+       	</div>
+        	<div class="player">
+          		<h3>Noah Allen<a href="#stat">Center</a></h3>
+       	</div>
+        	<div class="player">
+          		<h3><a href="#stat1">Power Forward</a>Trevor Newman</h3>
+       	</div>
+        	<div class="player">
+          		<h3><a href="#stat2">Point Guard</a>Helena Bolton</h3>
+        	</div>
+       	<div class="player">
+          		<h3><a href="#stat3">Shooting Guard</a>Melody Becker</h3>
+		</div>
+	</p>
+<a href="#home">Back to home</a> 
+ 	</div>
+ <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+
+    <p id="page2">
+      <div class="container">
+        <title>Lightning Tigers</title>
+        <div class="coach">
+          <h3></h3>
+        </div>
+        <div class="player">
+          <h3><a href="#stat4"></a></h3>
+        </div>
+        <div class="player">
+          <h3><a href="#stat5"></a></h3>
+        </div>
+        <div class="player">
+          <h3><a href="#stat6"></a></h3>
+        </div>
+        <div class="player">
+          <h3><a href="#stat7"></a></h3>
+        </div>
+      </div>
+<a href="#home">Back to home</a> 
+    </p>
+<br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+    <p id="page3">
+      <div class="container">
+        <title>Spitting Cobras</title>
+        <div class="coach">
+          <h3></h3>
+        </div>
+        <div class="player">
+          <h3><a href="#stat8"></a></h3>
+        </div>
+        <div class="player">
+          <h3><a href="#stat9"></a></h3>
+        </div>
+        <div class="player">
+          <h3><a href="#stat10"></a></h3>
+        </div>
+        <div class="player">
+          <h3><a href="#stat11"></a></h3>
+        </div>
+      </div>
+<a href="#home">Back to home</a> 
+    </p>
+<br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ <br><br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+
+    <p id="add">
+      <div class="container">
+        <title></title>
+        <div class="coach">
+          <h3></h3>
+        </div>
+        <div class="player">
+          <h3><a href=""></a></h3>
+        </div>
+        <div class="player">
+          <h3><a href=""></a></h3>
+        </div>
+        <div class="player">
+          <h3><a href=""></a></h3>
+        </div>
+        <div class="player">
+          <h3><a href=""></a></h3>
+        </div>
+      </div>
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/main.css">
+    <title>Home</title>
+
+</head>
+
+<body>
+    <button id="btn-login" onclick="login()">LOG IN</button>
+    <button id="btn-logout" onclick="logout()">LOG OUT</button>
+
+    <header class="main">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#page1">The Dirty Cheetahs</a></li>
+                    <li><a href="#page2">Lightning Tigers</a></li>
+                    <li><a href="#page3">Spitting Cobras</a></li>
+                    <li><a href="#add"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <%allMembers.forEach(function(member)){ %>
+        <form action="/delete" method="post">
+            <div class="">
+                <input type="checkbox" name="checkbox" value="<%=item._id%>" onChange="this.form.submit()">
+                <p>
+                    <%=member.name%>
+                </p>
+            </div>
+            <input type="hidden" name="listName" value="<%= listTitle %>"></input>
+        </form>
+        <%}) %>
+
+            <form class="" action="/" method="post">
+                <input type="text" name="newPlayer" placeholder="New Member" autocomplete="off">
+                <button type="submit" name="list" value="<%= listTitle %>">+</button>
+            </form>
+
+
+            <div class="hidden" id="gated-content">
+                <p>
+                    You're seeing this content because you're currently
+                    <strong>logged in</strong>.
+                </p>
+                <label>
+                    Access token:
+                    <pre id="ipt-access-token"></pre>
+                </label>
+                <label>
+                    User profile:
+                    <pre id="ipt-user-profile"></pre>
+                </label>
+            </div>
+
+            <script src="https://cdn.auth0.com/js/auth0-spa-js/1.13/auth0-spa-js.production.js"></script>
+            <script src="public/app.js"></script>
+
+</body>
+
+</html>
+
+<!-- <p id="page1">
+    <div class="container">
+      <title>The Dirty Cheetahs</title>
+      <div class="coach">
+        <h3>Gertrude Bison</h3>
+      </div>
+      <div class="player">
+        <h3>Noah Allen<a href="#stat">Center</a></h3>
+      </div>
+      <div class="player">
+        <h3><a href="#stat1">Power Forward</a>Trevor Newman</h3>
+      </div>
+      <div class="player">
+        <h3><a href="#stat2">Point Guard</a>Helena Bolton</h3>
+      </div>
+      <div class="player">
+        <h3><a href="#stat3">Shooting Guard</a>Melody Becker</h3>
+      </div>
+    </div>
+  </p>
+  <p id="page2">
+    <div class="container">
+      <title>Lightning Tigers</title>
+      <div class="coach">
+        <h3></h3>
+      </div>
+      <div class="player">
+        <h3><a href="#stat4"></a></h3>
+      </div>
+      <div class="player">
+        <h3><a href="#stat5"></a></h3>
+      </div>
+      <div class="player">
+        <h3><a href="#stat6"></a></h3>
+      </div>
+      <div class="player">
+        <h3><a href="#stat7"></a></h3>
+      </div>
+    </div>
+  </p>
+  <p id="page3">
+    <div class="container">
+      <title>Spitting Cobras</title>
+      <div class="coach">
+        <h3></h3>
+      </div>
+      <div class="player">
+        <h3><a href="#stat8"></a></h3>
+      </div>
+      <div class="player">
+        <h3><a href="#stat9"></a></h3>
+      </div>
+      <div class="player">
+        <h3><a href="#stat10"></a></h3>
+      </div>
+      <div class="player">
+        <h3><a href="#stat11"></a></h3>
+      </div>
+    </div>
+  </p>
+  <p id="add">
+    <div class="container">
+      <title></title>
+      <div class="coach">
+        <h3></h3>
+      </div>
+      <div class="player">
+        <h3><a href=""></a></h3>
+      </div>
+      <div class="player">
+        <h3><a href=""></a></h3>
+      </div>
+      <div class="player">
+        <h3><a href=""></a></h3>
+      </div>
+      <div class="player">
+        <h3><a href=""></a></h3>
+      </div>
+    </div>
+  </p> -->
