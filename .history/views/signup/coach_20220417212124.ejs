@@ -1,0 +1,32 @@
+<%-include("views/partials/header"); -%>
+
+<body style="background-color: #FEFAE0">
+
+    <!-- CHANGE PADDINGS TO BOOTSTRAP4 -->
+    <div class="header" style="color: #FEFAE0; text-align: center; font-family: 'Permanent Marker', cursive; background-color: #D4A373; padding: 10px 0px;">
+        <h1>SIGN UP</h1>
+    </div>
+
+    <h1 class="role" style="font-family: 'Permanent Marker', cursive; color: #8A926F; padding: 20px 20px; border-radius: 50px; border: 2px solid #E9EDC9; width: 20%; margin: 20px 20px; text-align: center">ROLE: COACH</h1>
+
+    <form action="/coach" method="post" style="margin-left: 20px">
+
+        <label class="label" for="coachName" style="color: #D4A373; font-size: 32px;">Coach Name: </label>
+        <input class="input" type="text" name="coachName" style="border: 1px solid #8A926F; background-color: none; border-radius: 50px; font-size: 28px">
+<br>
+        <label class="label" for="teamName" style="color: #D4A373; font-size: 32px;">Team Name: </label>
+        <input class="input" type="text" name="teamName" style="border: 1px solid #8A926F; background-color: none; border-radius: 50px; font-size: 28px">
+<br>
+        <label class="label" for="sportType" style="color: #D4A373; font-size: 32px;">Type of Sport: </label>
+        <input class="input" type="text" name="sportType" style="border: 1px solid #8A926F; background-color: none; border-radius: 50px; font-size: 28px">
+<br>
+
+        
+            <button type="submit" class="add" style="border: none; background-color: #E9EDC9; font-size: 30px; padding: 15px 30px; color: #8A926F; border-radius: 20px; margin-top: 30px">Submit</button>
+        </div>
+    </form>
+    </div>
+
+
+
+</html>

@@ -1,0 +1,16 @@
+.hidden {
+    display: none;
+  }
+  
+label {
+  margin-bottom: 10px;
+  display: block;
+  color: purple;
+}
+body{
+  background-color:blue;
+}
+
+.player-info {
+  background-color: #E9EDC9; margin: 0px 20px; color: #8A926F
+}

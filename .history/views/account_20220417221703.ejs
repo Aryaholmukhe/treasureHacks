@@ -1,0 +1,33 @@
+<%-include("partials/header"); -%>
+
+<body >
+    <!-- <div class="text-center "
+        style="font-family: 'Permanent Marker', cursive; background-color: #D4A373; color: #FEFAE0; padding:1%; margin-bottom:1%">
+        <h1>
+            <%=personInfo.name%>
+        </h1>
+    </div> -->
+    <div class="container">
+        <div class="account-info-div ml-3 mt-2">
+            <p class="account-info">Name: <%=personInfo.name%>
+            </h3>
+            <h1 class="account-info">Age: <%=personInfo.age%>
+            </h1>
+            <h1 class="account-info">Phone Number: <%=personInfo.phone%>
+            <h1 class="account-info">Role: <%=personInfo.role%>
+            </h1>
+            <div class="account-info mt-5 ml-1">
+                <h1>Progress</h1> 
+                <h1>
+                    <%=personInfo.progress%>
+                </h1>
+                <form action="/<%=personInfo.id%>" method="post">
+                    <input style="margin:0.5%" type="text" name="excercise" placeholder="New improvement" autocomplete="off" />
+                    <button type="submit" value="<%=personInfo.id%>">Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

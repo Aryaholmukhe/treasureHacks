@@ -1,0 +1,44 @@
+body{
+  background-color: rgb(241, 123, 123);
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+  color: purple;
+}
+
+.player-info {
+  background-color: #E9EDC9; 
+  margin: 0px 20px; 
+  color: #8A926F;
+}
+
+.rounded{
+  border: 1px solid #8A926F; font-size: 24px; margin: 0.5%;
+}
+.big-add-btn{
+  border: 3px solid #8A926F; 
+  border-radius: 20px; 
+  font-size: 24px; 
+  background-color: transparent; 
+  color: #8A926F; 
+  padding: 1%; 
+  width: 30%;
+}
+.hidden {
+  display: none;
+}
+
+
+/*account.ejs*/
+.account-div { 
+  font-size: 30px
+}
+
+.account-info {
+  font-size: 32px; 
+  color: #8A926F; 
+  font-size:40px; 
+  font-family: Verdana;
+}

@@ -1,0 +1,50 @@
+body{
+  background-color: #112D4E !important;
+  color: #112D4E;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.nav{
+  font-family: 'Permanent Marker' cursive; 
+  background-color: #D4A373; 
+  color: #FEFAE0
+}
+
+.player-info {
+  background-color: #DBE2EF ; 
+  margin: 0px 20px; 
+}
+
+.rounded{
+  border: 1px solid #8A926F; font-size: 24px; margin: 0.5%;
+}
+.big-add-btn{
+  border: 3px solid #8A926F; 
+  border-radius: 20px; 
+  font-size: 24px; 
+  background-color: transparent; 
+  padding: 1%; 
+  width: 30%;
+}
+.hidden {
+  display: none;
+}
+
+.welcome-person{
+  color: #DBE2EF;
+}
+
+/*account.ejs*/
+.account-div { 
+  font-size: 30px
+}
+
+.account-info {
+  font-size: 32px; 
+  font-size:40px; 
+  font-family: Verdana;
+}

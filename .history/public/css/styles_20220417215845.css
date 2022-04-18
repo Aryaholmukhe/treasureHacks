@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+body{
+  font-family: 'Delius', cursive !important;
+  background-color: #000022 !important;
+  color: #3F72AF;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.nav{
+  font-family: 'Paytone One', sans-serif !important;
+  justify-content: center;
+  background-color: #DBE2EF; 
+  color: #112D4E
+}
+
+.player-info {
+  background-color: #DBE2EF ; 
+  margin: 0px 20px; 
+}
+
+.rounded{
+  border: 1px solid #8A926F; font-size: 24px; margin: 0.5%;
+}
+.big-add-btn{
+  border: 3px solid #8A926F; 
+  border-radius: 20px; 
+  font-size: 24px; 
+  background-color: transparent; 
+  padding: 1%; 
+  width: 30%;
+}
+.hidden {
+  display: none;
+}
+
+.welcome-person{
+  color: #DBE2EF;
+}
+
+/*account.ejs*/
+.account-div { 
+  font-size: 30px
+}
+
+.account-info {
+  font-size: 32px; 
+  font-size:40px; 
+  font-family: Verdana;
+}
