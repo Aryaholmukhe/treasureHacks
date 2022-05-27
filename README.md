@@ -2,7 +2,8 @@
 # treasureHacks
 
 https://treasure-hacks-2-0.devpost.com/
-
+## Team
+Arya Holmukhe, Prerana Sil and Lavanya Jain
 ## Inspiration 
 We got inspired to form this idea because we wanted to find a way to help the coaches and the players to keep track of their progress and figure out what they need to improve on. We thought it is difficult for the coach to record each player's progress in each sport they played. They also had to record each player's age, weight, and height because those variables can also affect the player's physical ability. 
 ## What it does
